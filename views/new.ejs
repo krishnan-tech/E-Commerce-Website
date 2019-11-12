@@ -1,0 +1,50 @@
+<% include include/head %>
+
+<div class="container">
+
+  <form class="form-horizontal" action="/" method="POST">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">NAME:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="image">Enter Image Url:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="image" placeholder="Enter Image Url" name="image" multiple>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="description">Enter description:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="description" placeholder="Enter description" name="description">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="price">Enter price:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="price" placeholder="Enter price" name="price">
+      </div>
+    </div>
+
+
+    
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-lg btn-success btn-block">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+ 

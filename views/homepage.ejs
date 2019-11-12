@@ -1,0 +1,45 @@
+<%  include include/head %>
+
+<!-- Page Content -->
+<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Products</h1>
+
+  <hr class="mt-2 mb-5">
+
+  
+
+      <div class="row">
+          <% product.forEach(function(product){ %>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="<%= product.image %>" alt="<%= product.name %>" style="max-width: 300px; max-height: 300px;">
+                  <div class="caption">
+                    <h4><%= product.name %></h4>
+                    <p><%= product.description %></p>
+                    <p><a href="#" class="btn btn-info btn-xs" role="button">$ <%= product.price %></a> 
+                    <a href="/add-to-cart/<%= product._id %>" class="btn btn-success btn-sm" role="button">Add To Cart</a></p>
+                </div>
+              </div>
+            </div>
+          <% }); %>
+        
+      </div>
+      
+      <iframe height="400px" width="100%" src="https://repl.it/repls/ThankfulCarefulCustomization?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+</div>
+
+
+<%  include include/footer %>
+
+
+
+
+
+
+
+
+      
+    </div><!-- End container -->
+<%  include include/footer %>
