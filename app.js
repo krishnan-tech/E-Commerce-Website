@@ -1,17 +1,18 @@
-var express = require("express"),
-	ejs     = require("ejs"),
-	mongoose = require("mongoose"),
-	bodyParser = require("body-parser"),
-	cookieParser = require("cookie-parser"),
+
+// Made by Krishnan Navadia
+// Copyright 2019
+
+var express            = require("express"),
+	ejs            = require("ejs"),
+	mongoose       = require("mongoose"),
+	bodyParser     = require("body-parser"),
+	cookieParser   = require("cookie-parser"),
 	csrf           = require('csurf'),
-	session         = require("express-session"),
-	passport         = require("passport"),
-	flash             = require("connect-flash"),
-	passport           =  require("passport"),
-	MongoStore          = require("connect-mongo")(session)
-
-
-
+	session        = require("express-session"),
+	passport       = require("passport"),
+	flash          = require("connect-flash"),
+	passport       =  require("passport"),
+	MongoStore     = require("connect-mongo")(session)
 
 
 var app     = express();
